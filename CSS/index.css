@@ -1,0 +1,92 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+
+body {
+    background-color: powderblue;
+}
+
+section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 34px;
+    text-align: center;
+}
+
+#Experience {
+
+    font-style: italic;
+    text-align: left; /* Align content to the left */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #40a2f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(245, 6, 6, 0.1);
+}
+
+#Experience .job {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+#Experience .job-title {
+    font-weight: bold;
+    color: darkblue;
+}
+
+#Experience .job-description {
+    margin-top: 5px;
+    font-style: normal;
+    color: rgb(231, 28, 28);
+}
+#Connect {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #6c6ef7;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 34px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    background-color: bisque;
+}
+img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+nav {
+    background-color: #e97f1d;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
