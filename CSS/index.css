@@ -130,7 +130,7 @@ img.photo {
 }
 
 nav {
-    background-color: #40a2f1;
+    background-color: #40a1f1f3;
     padding: 10px;
     margin-left: 34px;
     margin-right: 15px;
@@ -156,7 +156,7 @@ nav a {
 
 nav a:hover {
     color: #070707;
-    background-color: #1000f7;
+    background-color: #ecebf8;
 }
 
 
@@ -203,21 +203,21 @@ nav a:hover {
 
 }
 
-/* Tablet vertion*/
+/* Standart desctop vertion*/
 @media (min-width: 769px) {
     h1 {
-        display: flex;
+        display: block;
         text-align: center;
-        font-size: 6em;
-        color: #f10798;
+        font-size: 3em;
+        color:#005f99;
     }
 
     img.photo {
-        width: 500px;
+        width: 350px;
     }
 
     img.icon {
-        width: 120px;
+        width: 90px;
     }
 
     ul {
@@ -233,7 +233,7 @@ nav a:hover {
     }
 
     nav a {
-        font-size: 3em;
+        font-size: 1.9em;
         background-color: #005f99;
     }
 
@@ -244,7 +244,7 @@ nav a:hover {
     #Projects,
     #Skills,
     #Connect {
-        font-size: 2.3em;
+        font-size: 1.3em;
         color: #ffe4b2;
     }
 
@@ -253,6 +253,6 @@ nav a:hover {
     }
 
     img.icon {
-        margin-top: 0.6em;
+        margin-top: 0.2em;
     }
 }
