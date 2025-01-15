@@ -32,5 +32,5 @@ if (skillsSection) {
         skillsList.appendChild(skillItem);
     }
 } else {
-    console.error('Not found.');
+    console.error('Not found!');
 }
