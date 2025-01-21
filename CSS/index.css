@@ -161,7 +161,7 @@ nav a:hover {
     background-color: #ecebf8;
 }
 
-#messages ul{
+#messages ul {
     background-color: powderblue;
     list-style-type: none;
     color: #070707;
@@ -169,6 +169,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
 }
+
 .remove-button {
     color: white;
     text-decoration: none;
@@ -182,31 +183,44 @@ nav a:hover {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 .remove-button:hover {
     color: #070707;
     background-color: #ecebf8;
 }
-#Leave_a_Message button {
+
+#Leave\ a\ Message button {
     color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: #40a1f1f3;
-    padding: 10px;
-    margin-left: 34px;
-    margin-right: 15px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
 }
-#Leave_a_Message button:hover {
+
+#Leave\ a\ Message button:hover {
     color: #070707;
     background-color: #ecebf8;
+}
+
+#Leave\ a\ Message textarea {
+    height: 100px;
+    width: 80%;
+    resize: none;
+}
+
+#Leave\ a\ Message input[type="text"],
+#Leave\ a\ Message input[type="email"] {
+    height: 20px;
+    width: 60%;
+    resize: none;
+}
+
+#Leave\ a\ Message label {
+    font-size: 14px;
+    color: #070707;
 }
 
 .footer-style {
@@ -227,7 +241,9 @@ nav a:hover {
 /* Tablet vertion*/
 @media (min-width: 481px) and (max-width: 768px) {
     h1 {
-        font-size: 4em;
+        display: block;
+        text-align: center;
+        font-size: 2em;
         color: #005f99;
     }
 
@@ -270,12 +286,18 @@ nav a:hover {
     }
 }
 
+#Leave\ a\ Message textarea {
+    height: 100px;
+    width: 80%;
+    resize: none;
+}
+
 /* Standart desctop vertion*/
 @media (min-width: 769px) {
     h1 {
         display: block;
         text-align: center;
-        font-size: 3em;
+        font-size: 24px;
         color: #005f99;
     }
 
@@ -300,18 +322,16 @@ nav a:hover {
     }
 
     nav a {
-        font-size: 1.9em;
+        font-size: 18px;
         background-color: #005f99;
     }
 
     #About,
     #Experience,
-    #Experience .job-dates,
-    #Experience .job-title,
     #Projects,
     #Skills,
     #Connect {
-        font-size: 1.3em;
+        font-size: 16px;
         color: #ffe4b2;
     }
 
@@ -320,10 +340,25 @@ nav a:hover {
     }
 
     img.icon {
+        width: 55px;
         margin-top: 0.2em;
     }
 
     .footer-style {
-        font-size: 2em;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
     }
+
+    #Leave\ a\ Message textarea {
+        height: 100px;
+        width: 50%;
+        resize: none;
+    }
+    #Leave\ a\ Message input[type="text"],
+#Leave\ a\ Message input[type="email"] {
+    height: 20px;
+    width: 25%;
+    resize: none;
+}
 }

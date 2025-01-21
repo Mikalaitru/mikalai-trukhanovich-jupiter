@@ -38,7 +38,10 @@ const messageForm = document.querySelector('form[name="leave_message"]');
 
 messageForm.addEventListener('submit', function (event) {
     event.preventDefault();
-
+    const messageLabel = document.getElementById('message_label');
+    messageLabel.style.display = 'block';
+    messageLabel.textContent = 'Message';
+    
     const usersName = event.target.usersName.value;
     const usersEmail = event.target.usersEmail.value;
     const usersMessage = event.target.usersMessage.value;
