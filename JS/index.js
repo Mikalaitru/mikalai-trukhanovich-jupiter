@@ -34,3 +34,44 @@ if (skillsSection) {
 } else {
     console.error('Not found!');
 }
+const messageForm = document.querySelector('form[name="leave_message"]');
+
+messageForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const messageLabel = document.getElementById('message_label');
+    messageLabel.style.display = 'block';
+    messageLabel.textContent = 'Message';
+    
+    const usersName = event.target.usersName.value;
+    const usersEmail = event.target.usersEmail.value;
+    const usersMessage = event.target.usersMessage.value;
+    console.log('Form submitted');
+    console.log('Name:', usersName);
+    console.log('Email:', usersEmail);
+    console.log('Message:', usersMessage);
+
+    const messageSection = document.querySelector('#messages');
+    const messageList = messageSection.querySelector('ul');
+
+    const newMessage = document.createElement('li');
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a>
+    <span>wrote: ${usersMessage}</span>`;
+    console.log('New message created:', newMessage);
+
+    const removeButton = document.createElement('button');
+    removeButton.innerText = 'remove';
+    removeButton.type = 'button';
+    removeButton.classList.add('remove-button');
+
+    removeButton.addEventListener('click', function () {
+        const entry = removeButton.parentNode;
+        console.log('Removing:', entry);
+        entry.remove();
+    });
+
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+    console.log('Message appended to list:', newMessage);
+
+    event.target.reset();
+});
