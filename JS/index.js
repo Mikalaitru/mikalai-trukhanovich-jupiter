@@ -77,7 +77,8 @@ messageForm.addEventListener('submit', function (event) {
 });
 
 const customProjectNames = {
-    "mikalai-trukhanovich-jupiter": "Code the Dream Project: Portfolio"
+    "mikalai-trukhanovich-jupiter": "Code the Dream Project: Portfolio",
+    "Code_The_Dream_Project_Open_API": "Code The Dream Project Open API"
 };
 
 fetch('https://api.github.com/users/Mikalaitru/repos')
