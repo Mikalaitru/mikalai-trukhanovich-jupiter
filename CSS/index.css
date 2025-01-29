@@ -104,6 +104,17 @@ section {
     box-shadow: 0 4px 6px rgba(245, 6, 6, 0.1);
 }
 
+#Projects ul {
+    background-color: #40a2f1;
+    color: #070707;
+    text-align: justify;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 #Connect {
     display: flex;
     justify-content: center;
@@ -277,6 +288,7 @@ nav a:hover {
     #Experience .job-dates,
     #Experience .job-title,
     #Projects p,
+    #Projects ul,
     #Skills ul {
         font-size: 1.3em;
     }
@@ -329,6 +341,7 @@ nav a:hover {
     #About,
     #Experience,
     #Projects,
+    #Projects ul,
     #Skills,
     #Connect {
         font-size: 16px;
@@ -355,10 +368,11 @@ nav a:hover {
         width: 50%;
         resize: none;
     }
+
     #Leave\ a\ Message input[type="text"],
-#Leave\ a\ Message input[type="email"] {
-    height: 20px;
-    width: 25%;
-    resize: none;
-}
+    #Leave\ a\ Message input[type="email"] {
+        height: 20px;
+        width: 25%;
+        resize: none;
+    }
 }

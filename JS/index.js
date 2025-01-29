@@ -75,3 +75,40 @@ messageForm.addEventListener('submit', function (event) {
 
     event.target.reset();
 });
+
+const customProjectNames = {
+    "mikalai-trukhanovich-jupiter": "Code the Dream Project: Portfolio",
+    "Code_The_Dream_Project_Open_API": "Code The Dream Project Open API"
+};
+
+fetch('https://api.github.com/users/Mikalaitru/repos')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(repositories => {
+
+        const projectSection = document.getElementById('Projects');
+        const projectList = projectSection.querySelector('ul');
+
+        for (let i = 0; i < repositories.length; i++) {
+            
+            const repoName = repositories[i].name;
+            const ProjectName = customProjectNames[repoName] || repoName;
+
+            const project = document.createElement('li');
+            project.textContent = ProjectName; 
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching repositories:', error);
+        const projectSection = document.getElementById('Projects');
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = 'Unable to load projects at this time. Please try again later.';
+        projectSection.appendChild(errorMessage);
+    });
+
+    
